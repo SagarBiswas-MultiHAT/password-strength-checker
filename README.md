@@ -40,6 +40,3 @@ Password_Strength_Checker/
 - Add at least one number.
 - Include at least one special character.
 - Use at least one uppercase letter.
-
-## License
-This project is open-source and available under the MIT License.
