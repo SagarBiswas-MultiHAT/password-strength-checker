@@ -1,0 +1,183 @@
+:root {
+    --bg: #f7fafc;
+    --card: #ffffff;
+    --muted: #6b7280;
+    --accent-weak: #ef4444;
+    /* red */
+    --accent-mid: #f59e0b;
+    /* amber */
+    --accent-good: #10b981;
+    /* green */
+    --accent-strong: #0891b2;
+    /* teal */
+    --radius: 12px;
+    --glass: rgba(255, 255, 255, 0.7);
+}
+
+
+* {
+    box-sizing: border-box
+}
+
+html,
+body {
+    height: 100%
+}
+
+body {
+    margin: 0;
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    background: linear-gradient(180deg, #e6f7ff 0%, #f7fff0 100%);
+    color: #0f172a;
+    -webkit-font-smoothing: antialiased;
+}
+
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    flex-direction: column;
+}
+
+
+.card {
+    width: 100%;
+    max-width: 720px;
+    background: var(--card);
+    border-radius: var(--radius);
+    padding: 20px;
+    box-shadow: 0 8px 24px rgba(2, 6, 23, 0.08);
+}
+
+
+.card.small {
+    max-width: 560px
+}
+
+
+h1 {
+    font-size: 1.4rem;
+    margin: 0 0 12px
+}
+
+
+.row {
+    display: flex;
+    gap: 8px;
+    align-items: center
+}
+
+input[type="password"],
+input[type="text"] {
+    flex: 1;
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid #e6edf3;
+    font-size: 1rem;
+}
+
+
+.btn {
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 0;
+    background: #0ea5a4;
+    color: white;
+    cursor: pointer
+}
+
+.btn.small {
+    padding: 6px 8px;
+    font-size: 0.9rem
+}
+
+.btn.ghost {
+    background: transparent;
+    border: 1px solid #e6edf3;
+    color: var(--muted)
+}
+
+.meter {
+    height: 12px;
+    background: #eef2f7;
+    border-radius: 999px;
+    margin-top: 14px;
+    overflow: hidden
+}
+
+.meter-bar {
+    height: 100%;
+    width: 0%;
+    transition: width 300ms ease, background-color 300ms ease
+}
+
+
+.strength {
+    margin: 10px 0;
+    font-weight: 600
+}
+
+.checks {
+    list-style: none;
+    padding: 0;
+    margin: 0
+}
+
+.checks li {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    padding: 6px 0;
+    color: var(--muted)
+}
+
+.checks li.ok {
+    color: var(--accent-good)
+}
+
+.checks li.warn {
+    color: var(--accent-mid)
+}
+
+.checks li.bad {
+    color: var(--accent-weak)
+}
+
+
+.controls {
+    display: flex;
+    gap: 8px;
+    margin-top: 12px
+}
+
+.note {
+    margin-top: 12px;
+    font-size: 0.9rem;
+    color: var(--muted)
+}
+
+
+/* small-screen adjustments */
+@media(min-width:840px) {
+    .wrapper {
+        flex-direction: row;
+        align-items: flex-start
+    }
+}
+
+
+/* utility for screen-reader only */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0
+}
