@@ -1,5 +1,4 @@
-# Password Strength Checker — 10/10 Version
-
+# Password Strength Checker
 **What it is**
 A polished, accessible client-side password strength checker that estimates entropy, detects weak patterns, offers actionable suggestions, and includes a password generator. Suitable for demos, portfolios, or as a frontend component in larger projects.
 
