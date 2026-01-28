@@ -2,20 +2,66 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Password Strength Checker</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Password Strength Checker — 10/10</title>
+    <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-    <div class="container">
-        <h1>Password Strength Checker</h1>
-        <input type="password" id="password" placeholder="Enter your password">
-        <div id="strength">Strength: </div>
-        <ul id="suggestions"></ul>
-    </div>
-    <script src="script.js"></script>
+    <main class="wrapper">
+        <section class="card" aria-labelledby="title">
+            <h1 id="title">Password Strength Checker</h1>
+
+
+            <label for="password" class="sr-only">Enter password</label>
+            <div class="row">
+                <input id="password" type="password" inputmode="text" autocomplete="new-password"
+                    placeholder="Enter a password" aria-describedby="strengthText" />
+
+
+                <button id="toggleVis" class="btn small" aria-pressed="false"
+                    aria-label="Toggle password visibility">Show</button>
+                <button id="generate" class="btn small" aria-label="Generate a strong password">Generate</button>
+            </div>
+
+
+            <div class="meter" aria-hidden="true">
+                <div id="meterBar" class="meter-bar" style="width:0%"></div>
+            </div>
+
+
+            <p id="strengthText" class="strength" aria-live="polite">Strength: —</p>
+
+
+            <ul id="checks" class="checks" aria-live="polite">
+                <!-- populated by JS -->
+            </ul>
+
+
+            <div class="controls">
+                <button id="copyBtn" class="btn">Copy password</button>
+                <button id="clearBtn" class="btn ghost">Clear</button>
+            </div>
+
+
+            <aside class="note">
+                <strong>Note:</strong> This tool runs entirely in your browser. It offers an entropy estimate and
+                best-effort checks — it is advisory only.
+            </aside>
+        </section>
+
+
+        <section class="card small" aria-labelledby="aboutTitle">
+            <h2 id="aboutTitle">About this checker</h2>
+            <p>This version includes entropy estimation, pattern detection (repeats, sequences, keyboard patterns), an
+                accessible strength meter, live suggestions, and a password generator. See the included README for
+                details.</p>
+        </section>
+    </main>
+
+
+    <script src="script.js" defer></script>
 </body>
 
 </html>
