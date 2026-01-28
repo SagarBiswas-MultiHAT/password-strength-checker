@@ -3,9 +3,11 @@
 **What it is**
 A polished, accessible client-side password strength checker that estimates entropy, detects weak patterns, offers actionable suggestions, and includes a password generator. Suitable for demos, portfolios, or as a frontend component in larger projects.
 
-### live: 
+### live: https://sagarbiswas-multihat.github.io/password-strength-checker/
 
-![](https://imgur.com/EsisIt6.png)
+---
+
+![](https://imgur.com/CFDQCmJ.png)
 
 ---
 
