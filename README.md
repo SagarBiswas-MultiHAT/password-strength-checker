@@ -2,7 +2,7 @@
 
 <div align="right">
 
-[![Live](https://img.shields.io/badge/live-sagarbiswas-multihat.github.io%2Fpassword-strength-checker-brightgreen)](https://sagarbiswas-multihat.github.io/Password-Strength-Checker/)
+[![Live](https://img.shields.io/website-up-down-green-red/https/sagarbiswas-multihat.github.io/Password-Strength-Checker)](https://sagarbiswas-multihat.github.io/Password-Strength-Checker/)
 &nbsp;
 [![JavaScript](https://img.shields.io/badge/javascript-ES6-yellowgreen)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 &nbsp;
