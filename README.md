@@ -1,8 +1,23 @@
 # Password Strength Checker
+
+<div align="right">
+
+[![Live](https://img.shields.io/badge/live-sagarbiswas-multihat.github.io%2Fpassword-strength-checker-brightgreen)](https://sagarbiswas-multihat.github.io/Password-Strength-Checker/)
+&nbsp;
+[![JavaScript](https://img.shields.io/badge/javascript-ES6-yellowgreen)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+&nbsp;
+[![Accessibility](https://img.shields.io/badge/accessibility-a11y-blue)](#)
+&nbsp;
+[![License](https://img.shields.io/github/license/SagarBiswas-MultiHAT/Password-Strength-Checker)](https://github.com/SagarBiswas-MultiHAT/Password-Strength-Checker/blob/main/LICENSE)
+&nbsp;
+[![Last commit](https://img.shields.io/github/last-commit/SagarBiswas-MultiHAT/Password-Strength-Checker)](https://github.com/SagarBiswas-MultiHAT/Password-Strength-Checker/commits)
+
+</div>
+
 **What it is**
 A polished, accessible client-side password strength checker that estimates entropy, detects weak patterns, offers actionable suggestions, and includes a password generator. Suitable for demos, portfolios, or as a frontend component in larger projects.
 
-### live: https://sagarbiswas-multihat.github.io/password-strength-checker/
+### live: https://sagarbiswas-multihat.github.io/Password-Strength-Checker/
 
 ---
 
